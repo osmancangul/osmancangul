@@ -1,0 +1,312 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins&display=swap');
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
+
+.container {
+    width: 100%;
+    height: 120vh;
+    background-image:linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)), url(img/1.jpg);
+    background-size: cover;
+    display: inline-block;
+}
+
+a {
+    text-decoration: none;
+}
+
+li {
+    list-style: none;
+}
+
+nav {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    height: 10vh;
+    background-color: white;
+    border-radius: 100px;
+    margin-top: 20px;
+}
+
+.logo {
+    font-size: 22px;
+    color: black;
+    transition: .25s ease-in-out;
+}
+
+.logo:hover {
+    color: crimson;
+}
+
+.menu {
+    display: flex;
+    justify-content: space-around;
+    width: 60%;
+}
+
+.menu a {
+    color: black;
+    font-size: 18px;
+    letter-spacing: 1px;
+    transition: 0.5s ease-in-out;
+}
+
+.menu a:hover {
+    color: crimson;
+}
+
+.burger {
+    display: none;
+    cursor: pointer;
+}
+
+.burger .line1, 
+.burger .line2,
+.burger .line3 {
+    width: 24px;
+    height: 3px;
+    background-color: black;
+    transition: .3s ease;
+}
+
+.burger .line2 {
+    margin: 3px 0px;
+}
+
+
+section .content {
+    margin-left: 45px;
+    margin-top: 10%;
+}
+
+
+section .content .info-bilisim {
+    color: white;
+    font-size: 40px;
+}
+
+
+section .content .info-bilisim span {
+    color: crimson;
+}
+
+section .content .cizgi {
+    border: 0.5px solid white;
+    width: 95%;
+    margin-top: 20px;
+}
+
+section .content .hizmet {
+    font-size: 37px;
+    color: white;
+    margin-top: 50px;
+}
+
+section .content .kutular {
+    display: flex;
+    margin-top: 80px;
+    column-gap: 20px;
+    flex-direction: row;
+    column-gap: 73px;
+}
+
+section .content .box-1 {
+    border: 2px solid crimson;
+    background-color: crimson;
+    width: 300px;
+    height: 300px;
+    border-radius: 60px;
+    transition: .25s ease-in-out;
+
+}
+
+
+
+section .content .box-1 h1   {
+    color: white;
+    text-align: center;
+    margin-top: 100px;
+}
+
+section .content .box-1 p   {
+    color: white;
+    text-align: center;
+    margin-top: 10px;
+}
+
+section .content .box-2 {
+    border: 2px solid crimson;
+    background-color: crimson;
+    width: 300px;
+    height: 300px;
+    border-radius: 60px;
+    transition: .25s ease-in-out;
+}
+
+section .content .box-2 h1   {
+    color: white;
+    text-align: center;
+    margin-top: 100px;
+    line-height: none;
+}
+
+section .content .box-2 p   {
+    color: white;
+    text-align: center;
+    margin-top: 10px;
+}
+
+
+
+section .content .box-3 {
+    border: 2px solid crimson;
+    background-color: crimson;
+    width: 300px;
+    height: 300px;
+    border-radius: 60px;
+    transition: .25s ease-in-out;
+}
+
+section .content .box-3 h1   {
+    color: white;
+    text-align: center;
+    margin-top: 100px;
+}
+
+section .content .box-3 p   {
+    color: white;
+    text-align: center;
+    margin-top: 10px;
+}
+
+
+
+section .content .box-4 {
+    border: 2px solid crimson;
+    background-color: crimson;
+    width: 300px;
+    height: 300px;
+    border-radius: 60px;
+    transition: .25s ease-in-out;
+}
+
+section .content .box-4 h1   {
+    color: white;
+    text-align: center;
+    margin-top: 100px;
+}
+
+section .content .box-4 p   {
+    color: white;
+    text-align: center;
+    margin-top: 10px;
+}
+
+
+section .content .kutular .box-1:hover {
+    background-color: black;
+    color: white;
+}
+
+section .content .kutular .box-2:hover {
+    background-color: black;
+    color: white;
+}
+
+section .content .kutular .box-3:hover {
+    background-color: black;
+    color: white;
+}
+
+section .content .kutular .box-4:hover {
+    background-color: black;
+    color: white;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+@media screen and (max-width:768px) {
+    
+    body {
+        overflow-x: hidden;
+        height: 100vh;
+    }
+
+    .container {
+        width: 100%;
+        height: 250vh;
+    }
+    
+    .burger {
+        display: block;
+    }
+
+    .menu {
+        position: absolute;
+        top: 9.6vh;
+        right: 0;
+        width: 60%;
+        height: 92vh;
+        display: flex;
+        flex-direction: column;
+        background-color: aliceblue;
+        align-items: center;
+        justify-content: space-around;
+        transform: translateX(100%);
+        transition: .5s ease;
+    }
+
+    section .content .hizmet {
+        margin-left: 10%;
+    }
+
+    .kutular {
+        flex-wrap: wrap;
+        margin-left: 3%;
+        row-gap: 30px;
+    }
+
+}
+
+.menu-active {
+    transform: translateX(0);
+}
+
+
+
+@keyframes linksFade {
+    from {
+        opacity: 0;
+        transform: translateX(50px);
+    }
+
+    to {
+        opacity: 1;
+        transform: translateX(0px);
+    }
+}
+
+
+
+::-webkit-scrollbar {
+    display: none;
+    visibility: hidden;
+    opacity: 0
+}
